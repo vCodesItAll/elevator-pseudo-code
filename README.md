@@ -14,3 +14,12 @@
 
  ### **User Story**:
  <u>As a user</u> <u>I want to</u> *be transported to a different floor* <u>so that I</u> *can continue to my desired location.*
+
+ ![photo of handwritten object web chart](img/PXL_20230908_163411667.jpg)
+
+ ## Objects
+
+ - control unit
+    - emergency alarm button
+        - button light
+    - open/close buttons
