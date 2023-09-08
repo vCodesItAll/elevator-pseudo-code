@@ -13,4 +13,4 @@
  - I exit the elevator
 
  ### **User Story**:
- *As a user I want to be transported to a different floor so that I can continue to my desired location*
+ <u>As a user</u> <u>I want to</u> *be transported to a different floor* <u>so that I</u> *can continue to my desired location.*
