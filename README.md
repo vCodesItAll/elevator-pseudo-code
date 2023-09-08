@@ -70,7 +70,33 @@ PROGRAM ElevatorSystem
         - CALL Door.close()
     - ENDFUNCTION
 
-    - Func
+    - FUNCTION MoveElevatorTo(floor)
+        - CALL Motor.move(floor)
+        - DEC CabFloorDisplay = floor
+        - DEC OutsideFloorDisplay = floor
+    - ENDFUNCTION
+
+    - FUNCTION ElevatorEmergency()
+        - CALL EmergencyAlarmLight.activate()
+        - CALL Motor.stop()
+    - ENDFUNCTION
+- END
+
+- DECLARE Button
+- START
+    - DECLARE Floor
+    - DECLARE LightStatus
+
+    - FUNCTION ButtonInitialization(floor)
+        - DEC Floor = floor
+        - DEC LightStatus = OFF
+    - ENDFUNCTION
+
+    - FUNCTION press()
+        - DEC LightStatus = ON
+    - ENDFUNCTION
+- END
+ENDPROGRAM
 
 
 
