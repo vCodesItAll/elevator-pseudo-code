@@ -23,3 +23,14 @@
     - emergency alarm button
         - button light
     - open/close buttons
+        - button light
+    - up/down buttons
+        - button light
+    - floor buttons
+        - button lights
+- cab floor display
+- outside floor display
+- door
+- motor
+
+
