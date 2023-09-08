@@ -83,20 +83,20 @@ PROGRAM ElevatorSystem
 - END
 
 - DECLARE Button
-- START
-    - DECLARE Floor
-    - DECLARE LightStatus
+    - START
+        - DECLARE Floor
+        - DECLARE LightStatus
 
-    - FUNCTION ButtonInitialization(floor)
-        - DEC Floor = floor
-        - DEC LightStatus = OFF
-    - ENDFUNCTION
+        - FUNCTION ButtonInitialization(floor)
+            - DEC Floor = floor
+            - DEC LightStatus = OFF
+        - ENDFUNCTION
 
-    - FUNCTION press()
-        - DEC LightStatus = ON
-    - ENDFUNCTION
-- END
-ENDPROGRAM
+        - FUNCTION press()
+            - DEC LightStatus = ON
+        - ENDFUNCTION
+    - END
+- ENDPROGRAM
 
 
 
