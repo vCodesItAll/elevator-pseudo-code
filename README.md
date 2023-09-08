@@ -36,10 +36,21 @@
 ## Pseudocode
 
 PROGRAM ElevatorSystem
-- DECLARE ControlUnit
-- DECLARE Door
-- DECLARE Motor
-- DECLARE CabFloorDisplay
-- DECLARE OutsideFloorDisplay
-- DECLARE Buttons[]
+- DECLARE Elevator
+- START 
+    - DECLARE ControlUnit
+    - DECLARE Door
+    - DECLARE Motor
+    - DECLARE CabFloorDisplay
+    - DECLARE OutsideFloorDisplay
+    - DECLARE Buttons[]
+
+- INIT
+    - ControlUnit()
+    - EmergencyAlarmLight()
+    - Door()
+    - Motor()
+    - CabFloorDisplay()
+    - OutsideFloorDisplay()
+
 
