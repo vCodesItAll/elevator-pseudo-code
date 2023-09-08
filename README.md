@@ -45,12 +45,33 @@ PROGRAM ElevatorSystem
     - DECLARE OutsideFloorDisplay
     - DECLARE Buttons[]
 
-- INIT
-    - ControlUnit()
-    - EmergencyAlarmLight()
-    - Door()
-    - Motor()
-    - CabFloorDisplay()
-    - OutsideFloorDisplay()
+    - FUNCTION ElevatorInitialization()
+        - INIT ControlUnit = new ControlUnit()
+        - INIT EmergencyAlarmLight = new EmergencyAlarmLight()
+        - INIT Door = new Door()
+        - INIT Motor = new Motor()
+        - INIT CabFloorDisplay = new CabFloorDisplay()
+        - INIT OutsideFloorDisplay = new OutsideFloorDisplay()
+        - INIT Buttons = new Array(FloorsCount)
+        - FOR floor FROM 1 to FloorsCount
+            - INIT Buttons[floor] = new Button(floor)
+        - ENDFOR
+    - ENDFUNCTION
+
+    - FUNCTION PressFloorButton(floor)
+        - Buttons[floor].press()
+    - ENDFUNCTION
+
+    - FUNCTION OpenDoor()
+        - CALL Door.open()
+    - ENDFUNCTION
+
+    - FUNCTION CloseDoor()
+        - CALL Door.close()
+    - ENDFUNCTION
+
+    - Func
+
+
 
 
