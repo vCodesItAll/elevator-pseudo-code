@@ -33,4 +33,13 @@
 - door
 - motor
 
+## Pseudocode
+
+PROGRAM ElevatorSystem
+- DECLARE ControlUnit
+- DECLARE Door
+- DECLARE Motor
+- DECLARE CabFloorDisplay
+- DECLARE OutsideFloorDisplay
+- DECLARE Buttons[]
 
